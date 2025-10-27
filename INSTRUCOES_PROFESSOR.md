@@ -40,7 +40,7 @@ template-repo/
 
 ## 🚀 Próximos Passos (Ações Manuais)
 
-### 1️⃣ Inicializar Repositório Git Local
+### 1️⃣ Inicializar Repositório Git Local e Conectar ao GitHub
 
 ```bash
 cd /home/durval/Documentos/PROJETOS/ml-projeto-final/template-repo
@@ -48,33 +48,28 @@ cd /home/durval/Documentos/PROJETOS/ml-projeto-final/template-repo
 # Inicializar Git
 git init
 
+# Adicionar remote do repositório que você já criou
+git remote add origin https://github.com/durvallins/uninassau-atividade-alunos-ml-regressao.git
+
+# Verificar se o remote foi adicionado
+git remote -v
+
 # Adicionar todos os arquivos
 git add .
 
 # Primeiro commit
-git commit -m "chore: Inicializa template do projeto ML"
-```
+git commit -m "chore: Inicializa template completo do projeto ML para GitHub Classroom"
 
-### 2️⃣ Criar Repositório no GitHub
-
-**Opção A: Via Interface Web**
-1. Acesse: https://github.com/new
-2. Nome do repositório: `uninassau-atividade-alunos-ml-regressao`
-3. Descrição: `Template para projeto de Machine Learning - Modelos de Regressão`
-4. Visibilidade: **Public**
-5. **NÃO marque:** Initialize with README (já temos)
-6. Clique em **"Create repository"**
-
-**Opção B: Via CLI (GitHub CLI)**
-```bash
-# Criar repositório público
-gh repo create uninassau-atividade-alunos-ml-regressao --public --source=. --remote=origin
-
-# Fazer push
+# Fazer push para o repositório existente
+# Se o repositório já tem conteúdo, use --force na primeira vez
 git push -u origin main
+# OU se der erro, force o push:
+# git push -u origin main --force
 ```
 
-### 3️⃣ Configurar como Template Repository
+**Nota:** Como você já criou o repositório em https://github.com/durvallins/uninassau-atividade-alunos-ml-regressao.git, não precisa criar novamente. Apenas conecte seu repositório local ao existente.
+
+### 2️⃣ Configurar como Template Repository
 
 **Via Interface Web:**
 1. Vá até o repositório: https://github.com/durvallins/uninassau-atividade-alunos-ml-regressao
@@ -89,7 +84,7 @@ git push -u origin main
 
 ## 🎓 Configurar GitHub Classroom
 
-### 1️⃣ Criar Organização (se não tiver)
+### 3️⃣ Criar Organização (se não tiver)
 
 1. Acesse: https://github.com/organizations/plan
 2. Clique em **"Create an organization"**
@@ -97,7 +92,7 @@ git push -u origin main
 4. Nome: `uninassau-ml-2025-1` (ou similar)
 5. Siga os passos de configuração
 
-### 2️⃣ Criar Classroom
+### 4️⃣ Criar Classroom
 
 1. Acesse: https://classroom.github.com/
 2. Clique em **"New classroom"**
@@ -105,7 +100,7 @@ git push -u origin main
 4. Nome do Classroom: `Introdução à Machine Learning - 2025.1`
 5. Configure permissões conforme necessário
 
-### 3️⃣ Criar Assignment (Atividade)
+### 5️⃣ Criar Assignment (Atividade)
 
 1. No Classroom, clique em **"New assignment"**
 2. Configure:
@@ -119,7 +114,7 @@ git push -u origin main
 
 3. Clique em **"Create assignment"**
 
-### 4️⃣ Distribuir Link aos Alunos
+### 6️⃣ Distribuir Link aos Alunos
 
 Após criar a assignment, você receberá um **link de convite**.
 

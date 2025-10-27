@@ -152,33 +152,29 @@ git push origin semana/4-otimizacao-final
 
 ## 🚀 Próximos Passos (O Que Você Deve Fazer)
 
-### 1. Inicializar Git
+### 1. Inicializar Git e Conectar ao Repositório Existente
 ```bash
-cd template-repo
+cd /home/durval/Documentos/PROJETOS/ml-projeto-final/template-repo
 git init
+git remote add origin https://github.com/durvallins/uninassau-atividade-alunos-ml-regressao.git
 git add .
-git commit -m "chore: Inicializa template do projeto ML"
-```
-
-### 2. Criar Repositório no GitHub
-```bash
-# Via GitHub CLI (ou criar manualmente na web)
-gh repo create uninassau-atividade-alunos-ml-regressao --public --source=. --remote=origin
+git commit -m "chore: Inicializa template completo do projeto ML para GitHub Classroom"
 git push -u origin main
+# Se der erro, force: git push -u origin main --force
 ```
 
-### 3. Marcar como Template
+### 2. Marcar como Template
 1. GitHub → Repositório → Settings
 2. Marcar: ☑️ **Template repository**
 
-### 4. Configurar GitHub Classroom
+### 3. Configurar GitHub Classroom
 1. Criar Classroom (se não tiver)
 2. Criar Assignment
 3. Selecionar template repository
 4. Definir prazos
 5. Gerar link de convite
 
-### 5. Distribuir aos Alunos
+### 4. Distribuir aos Alunos
 Compartilhar link: `https://classroom.github.com/a/xxxxxxxx`
 
 ---
